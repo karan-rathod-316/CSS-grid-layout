@@ -1,0 +1,36 @@
+.hero-main {
+    height: 110vh;
+    background-color: #f5e3d7;
+    .hero-img {
+        grid-column-start: span 2;
+        background-image: url(../media/images/home-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        // grid-row-start: span 2;
+    }
+    .hero-text {
+        grid-column-start: span 2;
+        padding-top: 15rem;
+        padding-left: 2.5rem;
+        padding-right: 5rem;
+        h3 {
+            color: $lt-grey-txt;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: $dk-grey-txt;
+            font-size: 2rem;
+            padding: 2rem 0 2rem 0;
+            line-height: 40px;
+            strong {
+                font-weight: bold;
+                color: rgb(44, 44, 44);
+            }
+        }
+        p {
+            color: $lt-grey-txt;
+            padding-bottom: 2rem;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+        // Form
+        .form-container {
+            grid-column-start: span 2;
+            background-color: $orange-bg;
+            color: $white-txt;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            .para-common {
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+            }
+            input {
+                background-color: $orange-bg;
+                color: $white-txt;
+                outline: none;
+                border: none;
+                border-bottom: solid 1px $bronze-bg;
+            }
+        }
+        
+        .contact-form-name,
+        .contact-form-email,
+        .message {
+            display: block;
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid $bronze-bg;
+            outline: 0;
+            background: $orange-bg;
+            font-family: 'PT Sans', sans-serif;
+            padding: 0.75em 1em;
+            margin-bottom: 1.5em;
+            font-size: 1.15rem;
+            &::placeholder {
+                color: $white-txt;
+            }
+        }
+        
+        // Form Image
+        .form-image {
+            background-image: url(../media/images/contact-img.jpg);
+            background-position: center top;
+            background-size: cover;
+            background-repeat: none;
+        }
+        
+        // Contact Details
+        .form-contact-details {
+            background-color: $black-bg;
+            color: $white-txt;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            .contact-header {
+                font-size: 1.5rem;
+            }
+            h6 {
+                font-size: 1.5rem;
+            }
+            .para-common {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            p {
+                display: inline-block;
+                padding-top: 1rem;
+                padding-left: .5rem;
+            }
+            .highlighted-text {
+                color: $orange-txt;
+            }
+        }
