@@ -29,7 +29,9 @@ html {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    // grid-auto-flow: row;
+    @media all and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .btn-hero {

@@ -1,194 +1,213 @@
-    // Section Two 
-    .section-two-text {
-        grid-column-start: span 2;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 3rem;
-        padding-bottom: 5rem;
-        .section-two-header {
-            color: $dk-grey-txt;
-        }
-        .sub-para {
-            color: $orange-txt;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
-        .para {
-            color: $lt-grey-txt;
-            padding-bottom: 1rem;
-        }
-    }
-    
-    .section-two-image {
-        background-image: url(../media/images/about-img.jpg);
-        background-position: 50% 20%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .section-two-progress {
-        background-color: $bronze-bg;
-        padding: 2rem 2rem 2rem 2rem;
-        .section-two-header {
-            color: $white-txt;
-        }
-        .sub-para {
-            color: $white-txt;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-        }
-        .para {
-            color: $white-txt;
-        }
-    }
-    
-    // Progress Bar***
-    .progress-item {
-        padding-top: 1rem;
-    }
-    
-    progress[value] {
-        height: 2px;
-        width: 100%;
-        border: 0px none;
-        background-color: black;
-        color: $bronze-bg;
-    }
-    
-    progress[value]::-webkit-progress-bar {
-        background-color: $white-txt;
-    }
-    
-    progress[value]::-webkit-progress-value {
-        background-color: black;
-    }
-    
-    progress::-moz-progress-bar {
-        background-color: $white-txt;
-    }
-    
-    @media screen and (max-width: 768px) {
-        .article {
-            padding-right: 0;
-        }
-        .progress-bar {
-            padding-left: 0;
-            margin-top: 3rem;
-        }
-    }
-    
-    //Section Three
-    .col {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        text-align: center;
-        color: $white-txt;
-        .col-header {
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        .fas {
-            font-size: 2.5rem;
-        }
-    }
-    
-    .col-1 {
-        background-color: $bronze-bg;
-    }
-    
-    .col-2 {
-        background-color: $orange-bg;
-    }
-    
-    .col-3 {
-        background-color: $black-bg;
-    }
-    
-    .col-4 {
-        background-color: white;
-        color: black;
-    }
-    
-    // Section Four
-    // .section-four {
-    //     padding-bottom: 2rem;
-    // }
-    .section-four-img {
-        grid-column-start: span 2;
-        background-image: url(../media/images/experience-img.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .section-four-text {
-        grid-column-start: span 2;
-        background-color: $orange-bg;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 2rem;
-        color: $white-txt;
-        .icon {
-            display: inline-block;
-        }
-        .section-four-para {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-        .icon,
-        h5 {
-            display: inline;
-            font-size: 1.5rem;
-            span {
-                color: rgb(34, 3, 34);
-                font-size: 1rem;
-                font-weight: bold;
-                opacity: 0.8;
-            }
-        }
-        .para-padding {
-            padding-left: 2.2rem;
-        }
-    }
-    
-    // Section Five
-    .section-five-text {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        background-color: $bronze-bg;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        padding-left: 2rem;
-        color: $white-txt;
-        .icon {
-            display: inline-block;
-        }
-        .section-five-para {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-        .icon,
-        h5 {
-            display: inline;
-            font-size: 1.5rem;
-            span {
-                color: darkolivegreen;
-                font-size: 1rem;
-                font-weight: bold;
-                opacity: 0.8;
-            }
-        }
-        .para-padding {
-            padding-left: 2.2rem;
-        }
-    }
-    
-    .section-five-img {
-        grid-column-start: 3;
-        grid-column-end: 6;
-        background-image: url(../media/images/education-img.jpg);
-        background-position: center;
-        background-size: cover;
-    }
+                // Section Two 
+                .section-two-text {
+                    grid-column-start: span 2;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    padding-top: 3rem;
+                    padding-bottom: 5rem;
+                    @media all and (max-width: 768px) {
+                        grid-column-start: span 1;
+                        padding-bottom: 3rem;
+                    }
+                    .section-two-header {
+                        color: $dk-grey-txt;
+                    }
+                    .sub-para {
+                        color: $orange-txt;
+                        padding-top: 1rem;
+                        padding-bottom: 2rem;
+                        @media all and (max-width: 768px) {
+                            padding-top: 2rem;
+                        }
+                    }
+                    .para {
+                        color: $lt-grey-txt;
+                        padding-bottom: 1rem;
+                    }
+                }
+                
+                .section-two-image {
+                    background-image: url(../media/images/about-img.jpg);
+                    background-position: 50% 20%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    @media all and (max-width: 768px) {
+                        grid-column: 1;
+                        height: 100vh;
+                    }
+                }
+                
+                .section-two-progress {
+                    background-color: $bronze-bg;
+                    padding: 2rem 2rem 2rem 2rem;
+                    .section-two-header {
+                        color: $white-txt;
+                    }
+                    .sub-para {
+                        color: $white-txt;
+                        padding-top: 1rem;
+                        padding-bottom: 2rem;
+                    }
+                    .para {
+                        color: $white-txt;
+                    }
+                }
+                
+                // Progress Bar***
+                .progress-item {
+                    padding-top: 1rem;
+                }
+                
+                progress[value] {
+                    height: 2px;
+                    width: 100%;
+                    border: 0px none;
+                    background-color: black;
+                    color: $bronze-bg;
+                }
+                
+                progress[value]::-webkit-progress-bar {
+                    background-color: $white-txt;
+                }
+                
+                progress[value]::-webkit-progress-value {
+                    background-color: black;
+                }
+                
+                progress::-moz-progress-bar {
+                    background-color: $white-txt;
+                }
+                
+                @media screen and (max-width: 768px) {
+                    .article {
+                        padding-right: 0;
+                    }
+                    .progress-bar {
+                        padding-left: 0;
+                        margin-top: 3rem;
+                    }
+                }
+                
+                //Section Three
+                .col {
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    text-align: center;
+                    color: $white-txt;
+                    .col-header {
+                        padding-top: 2rem;
+                        padding-bottom: 1rem;
+                        font-size: 1.5rem;
+                    }
+                    .fas {
+                        font-size: 2.5rem;
+                    }
+                }
+                
+                .col-1 {
+                    background-color: $bronze-bg;
+                }
+                
+                .col-2 {
+                    background-color: $orange-bg;
+                }
+                
+                .col-3 {
+                    background-color: $black-bg;
+                }
+                
+                .col-4 {
+                    background-color: white;
+                    color: black;
+                }
+                
+                // Section Four
+                // .section-four {
+                //     padding-bottom: 2rem;
+                // }
+                .section-four-img {
+                    grid-column-start: span 2;
+                    background-image: url(../media/images/experience-img.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    @media all and (max-width: 768px) {
+                        grid-column: 1;
+                        height: 70vh;
+                    }
+                }
+                
+                .section-four-text {
+                    grid-column-start: span 2;
+                    background-color: $orange-bg;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    padding-left: 2rem;
+                    color: $white-txt;
+                    .icon {
+                        display: inline-block;
+                    }
+                    .section-four-para {
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                    .icon,
+                    h5 {
+                        display: inline;
+                        font-size: 1.5rem;
+                        span {
+                            color: rgb(34, 3, 34);
+                            font-size: 1rem;
+                            font-weight: bold;
+                            opacity: 0.8;
+                        }
+                    }
+                    .para-padding {
+                        padding-left: 2.2rem;
+                    }
+                }
+                
+                // Section Five
+                .section-five-text {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    background-color: $bronze-bg;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    padding-left: 2rem;
+                    color: $white-txt;
+                    .icon {
+                        display: inline-block;
+                    }
+                    .section-five-para {
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                    .icon,
+                    h5 {
+                        display: inline;
+                        font-size: 1.5rem;
+                        span {
+                            color: darkolivegreen;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            opacity: 0.8;
+                        }
+                    }
+                    .para-padding {
+                        padding-left: 2.2rem;
+                    }
+                }
+                
+                .section-five-img {
+                    grid-column-start: 3;
+                    grid-column-end: 6;
+                    background-image: url(../media/images/education-img.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    @media all and (max-width: 768px) {
+                        grid-column: 1;
+                        height: 70vh;
+                    }
+                }

@@ -44,6 +44,10 @@
             background-position: center top;
             background-size: cover;
             background-repeat: none;
+            @media all and (max-width: 545px) {
+                grid-column: 1;
+                height: 80vh;
+            }
         }
         
         // Contact Details
@@ -52,6 +56,9 @@
             color: $white-txt;
             padding-top: 2rem;
             padding-left: 2rem;
+            @media all and (max-width: 545px) {
+                grid-column: 1;
+            }
             .contact-header {
                 font-size: 1.5rem;
             }
